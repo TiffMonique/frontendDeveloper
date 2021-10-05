@@ -9,11 +9,39 @@
         div p{
             color: lime
         }
+        <!--Esto significa que se aplicara el background a el primero seguido de div-->
+        div > div {
+            background:pink;
+        }
+
+        .es{
+            background:limegreen;
+        }
+
+        div + section {
+            background: palevioletred;
+        }
+        <!--Esto significa el hermano que esta despues de div obtendra este color-->
+        div ~p{
+            color: powderblue;
+        }
+
     </style>
 </head>
 <body>
     <div>
-        <p>el color de la pradera es lindo</p>
+        <div>
+            <p>El_color_de_la_pradera_es_lindo</p>
+            <div class="es">Es un verde cool</div> 
+        </div>
+    </div> 
+    <p>Clase de Selectores</p>
+    <p>Este hermano tambien es afectado</p>
+        
     </div>
+    <section>
+        Es lo mejor
+    </section>
+    <div>Master</div> 
 </body>
 </html>
